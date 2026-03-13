@@ -4,7 +4,15 @@
 
 {% block content %}
 
+<div class="form-container">
+
 <h2>Student Registration</h2>
+
+{% if error %}
+<div style="background: #fee2e2; color: #dc2626; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+{{ error }}
+</div>
+{% endif %}
 
 <form method="POST">
 
@@ -17,5 +25,7 @@
 <button type="submit">Register</button>
 
 </form>
+
+</div>
 
 {% endblock %}

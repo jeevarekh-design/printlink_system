@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Delivered Orders</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Student</th>
+<th>File</th>
+</tr>
+
+{% for order in orders %}
+
+<tr>
+
+<td>{{order[0]}}</td>
+<td>{{order[1]}}</td>
+<td>{{order[2]}}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

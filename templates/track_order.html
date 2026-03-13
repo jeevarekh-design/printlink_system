@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Track Order{% endblock %}
+
+{% block content %}
+
+<h2>Your Orders</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>File</th>
+<th>Copies</th>
+<th>Type</th>
+<th>Status</th>
+</tr>
+
+{% for order in orders %}
+
+<tr>
+
+<td>{{order[0]}}</td>
+<td>{{order[2]}}</td>
+<td>{{order[3]}}</td>
+<td>{{order[4]}}</td>
+<td>{{order[5]}}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

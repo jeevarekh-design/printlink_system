@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Inbox Orders</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Student</th>
+<th>File</th>
+<th>Action</th>
+</tr>
+
+{% for order in orders %}
+
+<tr>
+
+<td>{{order[0]}}</td>
+<td>{{order[1]}}</td>
+<td>{{order[2]}}</td>
+
+<td>
+<a href="/update_status/{{order[0]}}/Printing">Start Printing</a>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

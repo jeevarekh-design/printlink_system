@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&display=swap');
+/* ---------------- PAGE LAYOUT FIX ---------------- */
+
+html, body{
+    height:100%;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* Main content grows and pushes footer down */
+.container{
+    flex:1;
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar{
+    background:#0a0a0a;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid #00ffff;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#00ffff;
+
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 30px #00ffff;
+}
+
+
+/* ---------------- HERO SECTION (TITLE AREA) ---------------- */
+
+.hero{
+    text-align:center;
+    margin-top:70px;
+}
+
+
+/* ---------------- MAIN TITLE ---------------- */
+
+.hero h1{
+
+    font-size:56px;
+    font-weight:bold;
+
+    text-transform:uppercase;   /* makes text CAPITAL */
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+}
+
+
+/* ---------------- SUBTITLE ---------------- */
+
+.hero p{
+
+    font-size:22px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:0px;
+
+    opacity:0.9;
+}
+
+
+/* ---------------- MENU BUTTON AREA ---------------- */
+
+/* ---------- ROLE BUTTON AREA (CENTER) ---------- */
+
+.role-buttons{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:35px;   /* separation between buttons */
+}
+/* ---------------- NEON BUTTONS ---------------- */
+
+.btn{
+    display:block;
+    width:260px;
+    padding:14px;
+
+    border:none;
+    border-radius:12px;
+
+    font-size:16px;
+    font-weight:bold;
+    text-decoration:none;
+
+    color:white;
+    cursor:pointer;
+
+    background:linear-gradient(45deg,#ff00cc,#3333ff);
+
+    box-shadow:
+        0 0 10px #ff00cc,
+        0 0 20px #3333ff;
+
+    transition:0.3s;
+}
+
+/* Hover neon vibration */
+
+.btn:hover{
+
+    transform:scale(1.08);
+
+    background:linear-gradient(45deg,#00ffff,#ff00cc);
+
+    box-shadow:
+        0 0 15px #00ffff,
+        0 0 35px #ff00cc,
+        0 0 55px #3333ff;
+}
+
+/* Click animation */
+
+.btn:active{
+    transform:scale(0.95);
+}
+
+
+/* ---------------- FORMS ---------------- */
+
+form{
+    text-align:center;
+    margin-top:40px;
+}
+
+input, select{
+
+    padding:12px;
+    margin:10px;
+
+    border-radius:6px;
+    border:none;
+
+    width:250px;
+    font-size:14px;
+}
+
+
+/* ---------------- TABLE DESIGN ---------------- */
+
+table{
+    width:90%;
+    margin:40px auto;
+
+    border-collapse:collapse;
+
+    background:#111;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th{
+    background:#222;
+    padding:14px;
+    color:#00ffff;
+    font-size:16px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #333;
+}
+
+
+/* ---------------- STATUS COLORS ---------------- */
+
+.status-inbox{
+    color:#ffaa00;
+    font-weight:bold;
+}
+
+.status-printing{
+    color:#00ffff;
+    font-weight:bold;
+}
+
+.status-ready{
+    color:#00ff66;
+    font-weight:bold;
+}
+
+.status-delivered{
+    color:#ff66ff;
+    font-weight:bold;
+}
+
+
+/* ---------------- ADMIN DASHBOARD ---------------- */
+
+.dashboard{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+    margin-top:50px;
+}
+
+.card{
+
+    background:#111;
+    padding:25px;
+
+    width:180px;
+
+    border-radius:12px;
+    text-align:center;
+
+    border:1px solid #333;
+
+    box-shadow:
+        0 0 12px #00ffff;
+
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 0 25px #ff00cc,
+        0 0 45px #3333ff;
+}
+
+.card h2{
+    margin:10px 0;
+}
+.center-box{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:25px;   /* space between Register and Login */
+
+    text-align:center;
+}
+
+/* ---------------- FOOTER (BOTTOM) ---------------- */
+
+footer{
+
+    background:#0a0a0a;
+    text-align:center;
+    padding:15px;
+
+    border-top:2px solid #00ffff;
+
+    font-size:14px;
+}
+.main-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.subtitle{
+    text-align:center;
+    margin-top:10px;
+    font-size:18px;
+    opacity:0.9;
+}
+.main-title{
+
+    font-family: 'Anton', sans-serif;
+
+    font-size: 70px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 10px;
+
+}
+.student-title{
+
+    font-family: 'Bangers', cursive;
+
+    font-size: 42px;   /* slightly bigger than before */
+
+    letter-spacing: 2px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PrintLink</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">PrintLink</div>
+</nav>
+
+<div class="container">
+
+{% block content %}
+{% endblock %}
+
+</div>
+
+<footer>
+© 2026 PrintLink System | Smart Xerox Platform
+</footer>
+
+</body>
+</html>

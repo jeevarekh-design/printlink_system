@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Upload{% endblock %}
+
+{% block content %}
+
+<h2>Upload Document</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+<label>Select File</label>
+<input type="file" name="document" required>
+
+<label>Copies</label>
+<input type="number" name="copies" required>
+
+<label>Print Type</label>
+<select name="print_type">
+<option>Black & White</option>
+<option>Color</option>
+</select>
+
+<button type="submit">Send to Print</button>
+
+</form>
+
+{% endblock %}
